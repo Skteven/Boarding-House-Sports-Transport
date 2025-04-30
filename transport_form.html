@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Sports Transport Form</h1>
+
+<form action='/transport_form' method='POST'>
+<table>
+
+<tr>
+            <td><label for='Name'>Name:</label></td>
+            <td><input type='text' id='Name' name='Name'><br><br></td>
+</tr>
+<tr>        <td> <label for='Location'>Location:</label></td>
+                <td><select id="Location" name="Location">
+                    <option value="Cranbrook Junior School">1</option>
+                    <option value="Lyne Park">2</option>
+                    <option value="Knox">3</option>
+</tr>
+<tr>
+           <td> <label for='answer'>Answer:</label></td>
+            <td><textarea cols="40" rows="5" id='answer' name='answer'></textarea><br><br></td>
+</tr>
+<tr>
+           <td> <label for='difficulty'>Difficulty:</label></td>
+            <td><select id="difficulty" name="difficulty">
+                <option value="Easy">Easy</option>
+                <option value="Medium">Medium</option>
+                <option value="Hard">Hard</option>
+
+                </select>
+            <br><br>
+            </td>
+</tr>
+
+<tr>
+            <td><input type='submit' value='Submit Card'></td>
+</tr>        
+
+</table>
+</form>
+
+
+{% endblock %}
